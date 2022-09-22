@@ -1,0 +1,117 @@
+.n-wrapper {
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dark {
+    filter: invert(1);
+}
+
+.menu-btn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+}
+
+.menu-btn img {
+    width: 1.3rem;
+}
+
+#header-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    flex: 1;
+}
+
+.header-name {
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+.n-right {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+.n-list {
+    flex: 10;
+}
+
+.n-list>ul {
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+    font-weight: bolder;
+}
+
+.n-list>ul>li:hover {
+    cursor: pointer;
+    color: darkviolet;
+}
+
+.n-list>ul>li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu {
+    position: absolute;
+    inset: 0;
+    background-color: var(--orange);
+    display: grid;
+    place-items: center;
+    z-index: 2;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu li:last-child {
+    background-color: #fff;
+    color: var(--orange);
+    padding: 0.25rem 1rem;
+}
+
+.n-left .logo {
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 1080px) {
+    .n-right {
+        display: none;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .header-name {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-name {
+        font-size: 1.7rem;
+    }
+}
